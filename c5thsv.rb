@@ -141,7 +141,7 @@ printNotes out
 
 #play all 12 fifths
 live_loop :foo do
-  stop
+  ##| stop
   ##| use_octave 1
   use_synth :piano
   play out.tick, amp: 0.3
@@ -152,7 +152,7 @@ end
 #Don't even care what notes these are it's just cool
 #they all sound ok together
 live_loop :bar do
-  ##| stop
+  stop
   use_octave 1
   use_synth :piano
   w = (knit 0.25,4, 0.5,1, 0.25,1)
